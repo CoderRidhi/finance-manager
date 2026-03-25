@@ -28,27 +28,27 @@ export default function Login() {
   };
 
   return (
-    <div className="container">
-      <div className="card">
-        <h2 className="glow">Finance Manager</h2>
+  <div className="auth-wrapper">
+    <div className="auth-card">
+      <h2 className="glow">Finance Manager</h2>
 
-        <input
-          placeholder="Email"
-          onChange={(e) =>
-            setForm({ ...form, email: e.target.value })
-          }
-        />
+      <input
+        placeholder="Email"
+        onChange={(e) =>
+          setForm({ ...form, email: e.target.value })
+        }
+      />
 
-        <input
-          type="password"
-          placeholder="Password"
-          onChange={(e) =>
-            setForm({ ...form, password: e.target.value })
-          }
-        />
+      <input
+        type="password"
+        placeholder="Password"
+        onChange={(e) =>
+          setForm({ ...form, password: e.target.value })
+        }
+      />
 
-        <button onClick={handleLogin}>Login</button>
-      </div>
+      <button onClick={handleLogin}>Login</button>
     </div>
+  </div>
   );
 }
